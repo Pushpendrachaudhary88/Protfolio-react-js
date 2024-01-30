@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your HTML Page</title>
+</head>
+<body>
+
+    <!-- Include Axios script tag -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Your JavaScript code -->
+    <script>
+        // Your function using axios
+        function generateTodos() {
+            // Use axios here
+            axios.get('https://api.example.com/todos')
+                .then(response => {
+                    // Handle the response
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    // Handle errors
+                    console.error(error);
+                });
+        }
+
+        // Call the function
+        generateTodos();
+    </script>
+
+</body>
+</html>
